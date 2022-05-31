@@ -16,10 +16,8 @@ jobs:
          path: ~/npm 
          key: ${{ runner.os }}-build-${{ env.cache-name}}
          restore-keys: |
-          ${{ runner.os }}-build-${{ env.cache-name}}-
-          ${{ runner.os }}-build-
-          ${{ runner.os }}-
-          
+          ${{ runner.os }}-build-${{ env.cache-name}}
+               
       - name: Install dependencies 
         if: steps.myCacheStep.outputs.cache-hit !='true'
         run: npm install 
