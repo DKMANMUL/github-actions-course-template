@@ -9,7 +9,7 @@ jobs:
       
       - name: Cache node module
         id: myCacheStep
-        uses: actions/cache@v3.0.3
+        uses: actions/cache@v2
         env: 
          cache-name: cache-node-modules
         with: 
