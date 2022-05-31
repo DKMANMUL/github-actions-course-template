@@ -9,12 +9,12 @@ jobs:
       
       - name: Cache node modules
         id: myCacheStep
-        uses: actions/cache@v2 
+        uses: actions/cache@v3.0.3
         env: 
          cache-name: cache-node-modules
         with: 
          path: ~/npm 
-         key: ${{ runner.os }}-build-${{ env.cache-name}}-${{ hashFiles('/package-lock.json')
+         key: ${{ runner.os }}-build-${{ env.cache-name}}
          restore-keys: |
           ${{ runner.os }}-build-${{ env.cache-name}}-
           ${{ runner.os }}-build-
