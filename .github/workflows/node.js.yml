@@ -1,4 +1,4 @@
-name: npm -cache
+name: npm-cache
 on: push
 
 jobs:
