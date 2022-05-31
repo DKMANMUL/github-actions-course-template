@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - name: Cache node module
+      - name: Cache node modules
         id: myCacheStep
         uses: actions/cache@v2
         env: 
