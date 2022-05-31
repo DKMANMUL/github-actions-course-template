@@ -14,9 +14,9 @@ jobs:
          cache-name: cache-node-modules
         with: 
          path: ~/npm 
-         key: ${{ runner.os }}-build-${{ env.cache-name}}
+         key: ${{ runner.os }}-builds-${{ env.cache-name}}
          restore-keys: |
-          ${{ runner.os }}-tri
+          ${{ runner.os }}-build-${{ env.cache-name}}
                
       - name: Install dependencies 
         if: steps.myCacheStep.outputs.cache-hit !='true'
