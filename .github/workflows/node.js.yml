@@ -13,7 +13,7 @@ jobs:
         env: 
          cache-name: cache-node-modules
         with: 
-         path: ~/npm 
+         path: ~/.npm 
          key: ${{ runner.os }}-build-${{ env.cache-name}}
          restore-keys: |
           ${{ runner.os }}-build-${{ env.cache-name}}
